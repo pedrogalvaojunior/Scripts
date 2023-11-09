@@ -1,0 +1,1 @@
+sp_spaceused @oneresultset = 1

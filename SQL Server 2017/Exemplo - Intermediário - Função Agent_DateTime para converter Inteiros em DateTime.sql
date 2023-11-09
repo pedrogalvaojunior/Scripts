@@ -1,0 +1,8 @@
+DECLARE @date INT, @time INT
+SELECT @date=20150119, @time=171911
+SELECT CAST(CAST(@date AS CHAR(8))+' '+STUFF(STUFF(@time,3,0,':'),6,0,':') AS DATETIME)
+
+
+DECLARE @date INT, @time INT
+SELECT @date=20150119, @time=171911
+SELECT MSDB.DBO.AGENT_DATETIME(@date,@time)
