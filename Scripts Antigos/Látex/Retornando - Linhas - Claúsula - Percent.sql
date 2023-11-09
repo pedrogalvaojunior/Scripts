@@ -1,0 +1,1 @@
+Select top 80 percent * from produtos
