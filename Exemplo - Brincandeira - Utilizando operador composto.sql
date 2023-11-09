@@ -1,0 +1,3 @@
+DECLARE @s VARCHAR(10) = '1'
+SELECT @s += 1
+SELECT @s 

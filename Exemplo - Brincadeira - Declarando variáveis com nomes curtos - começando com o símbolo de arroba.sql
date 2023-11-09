@@ -1,0 +1,2 @@
+DECLARE @ INT = 1000000;
+SELECT @ AS 'One Million' 

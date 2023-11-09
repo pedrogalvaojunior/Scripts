@@ -1,0 +1,1 @@
+DROP DATABASE AdventureWorks_SBSExample1;
