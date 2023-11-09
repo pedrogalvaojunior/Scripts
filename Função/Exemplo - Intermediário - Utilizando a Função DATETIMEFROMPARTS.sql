@@ -1,0 +1,35 @@
+CREATE TABLE #T
+(ID INT,
+ [Year] VARCHAR(4),
+ M VARCHAR(2),
+ D VARCHAR(2),
+ H VARCHAR(2),
+ Mi VARCHAR(2),
+ S VARCHAR(2),
+ MS VARCHAR(3))
+
+INSERT INTO #T 
+SELECT 1,'2013','1','22','11','11','11','995' 
+UNION ALL
+SELECT 2,'2013','1','22','11','11','11','992' 
+UNION ALL
+SELECT 3,'2013', '1', '31', '15', '34', '21', '003' 
+
+DECLARE @Y VARCHAR(4),@M VARCHAR(2),
+        @D VARCHAR(2),@H VARCHAR(2),
+        @Mi VARCHAR(2),@S VARCHAR(2),@Ms VARCHAR(4),@IC INT 
+
+SET @IC = 1
+
+WHILE @IC <= (SELECT MAX(ID) FROM #T)
+ BEGIN
+  SET @Y = (SELECT [Year] FROM #T WHERE ID = @IC)
+  SET @M = (SELECT M FROM #T WHERE ID = @IC)
+  SET @D = (SELECT D FROM #T WHERE ID = @IC)
+  SET @H = (SELECT H FROM #T WHERE ID = @IC)
+  SET @Mi = (SELECT Mi FROM #T WHERE ID = @IC)
+  SET @S = (SELECT S FROM #T WHERE ID = @IC)
+  SET @Ms = (SELECT MS FROM #T WHERE ID =@IC)
+  SELECT @IC + 3 AS 'Select number', DATETIMEFROMPARTS (@Y,@M,@D,@H,@Mi,@S,@Ms) AS 'Datetime'
+  ,CAST(@S AS CHAR(2)) + ':' + CAST(@Ms AS CHAR(3)) AS 'Original seconds input'   SET @IC = @IC + 1 
+END
