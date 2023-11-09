@@ -1,0 +1,1 @@
+EXEC sp_MSForEachDB 'Select * from sys.dm_db_persisted_sku_features'
