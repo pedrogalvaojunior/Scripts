@@ -1,34 +1,40 @@
-Create Table Sequence
- (Code Int Primary Key Identity(1,1),
-  Number BigInt Not Null)
+-- Criando a Tabela --
+Create Table NumerosFibonacci
+ (Codigo Int Primary Key Identity(0,1),
+  Numeros BigInt Not Null)
 Go
 
-Declare @Counter Int = 1,
-        @String Varchar(Max)
+-- Declarando as Variáveis de Controle --
+Declare @Contador TinyInt = 0, @SequenciaFinobacciConcatenada Varchar(Max)
 
-While @Counter <=50
+While @Contador <50
 Begin
 
- Insert Into Sequence (Number)
- Select IsNull(Sum(Number),1) from Sequence
- Where Code < @Counter -1
-
- Set @String = (Select Concat(@String,',',Number) 
-                from Sequence 
-				Where Code = @Counter)
+ If @Contador = 0
+  Begin
+   Insert Into NumerosFibonacci (Numeros) Values (0)
+   Set @SequenciaFinobacciConcatenada = '0'
+ End
+ Else
+  Begin
+   Insert Into NumerosFibonacci (Numeros)
+   Select IsNull(Sum(Numeros)+1,1) from NumerosFibonacci
+   Where Codigo < @Contador - 1     
+   
+   Set @SequenciaFinobacciConcatenada = (Select Concat(@SequenciaFinobacciConcatenada,',',Numeros) from NumerosFibonacci Where Codigo = @Contador)
+  End 
  
- Set @Counter +=1
+ Set @Contador +=1
 
 End
 
-Update Sequence
-Set Number = 0
-Where Code = 1
+-- Apresentando a Lista de Números no formato de Tabela --
+Select Numeros 'Numeros List' From NumerosFibonacci
 
-
-Select Number 'Number List' From Sequence
-
-Select '0'+@String As 'Sequence Fibonacci'
+-- Apresentando a Lista de Números no Formato Concatenado --
+Select @SequenciaFinobacciConcatenada As 'NumerosFibonacci Fibonacci'
 Go
 
-Truncate Table Sequence
+-- Limpando a Tabela --
+Truncate Table NumerosFibonacci
+Go
