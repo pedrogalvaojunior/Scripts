@@ -2,6 +2,81 @@
 
 Este catálogo tem como objetivo facilitar a navegação pelo acervo de scripts disponíveis neste repositório.
 
+A base de conhecimento reúne estudos, experimentos, exemplos práticos, projetos, materiais de treinamento, troubleshooting, monitoramento e soluções desenvolvidas ao longo de anos de utilização do Microsoft SQL Server.
+
+---
+
+# Dimensão do Acervo
+
+- 📂 Mais de 90 categorias técnicas
+- 📄 Mais de 1.500 arquivos
+- 💾 Compatível com SQL Server 2005 até SQL Server 2022
+- 📚 Conteúdo básico, intermediário e avançado
+- 🔍 Administração de Banco de Dados
+- ⚡ Performance Tuning
+- 📈 Monitoramento e Troubleshooting
+- 🔒 Segurança e Criptografia
+- 🔄 Backup, Restore e Recovery
+- 🧠 Transaction Log Internals
+- 📊 XML, Query Store e Recursos Avançados
+- 🎓 Material utilizado em estudos, treinamentos e apresentações técnicas
+- 🏆 Projetos completos de simulação da Copa do Mundo utilizando T-SQL
+
+---
+
+# Estatísticas do Acervo
+
+| Categoria | Quantidade Aproximada |
+|------------|------------:|
+| Desenvolvimento T-SQL | 250+ |
+| Administração SQL Server | 300+ |
+| Performance Tuning | 180+ |
+| Monitoramento e Diagnóstico | 120+ |
+| Segurança | 60+ |
+| Recovery e Transaction Log | 80+ |
+| Índices | 35+ |
+| Query Store | 25+ |
+| XML | 30+ |
+| Backup e Restore | 40+ |
+| Versões do SQL Server | 90+ |
+| Livros e Treinamentos | 150+ |
+| Projetos Especiais | 100+ |
+
+---
+
+# Cobertura Técnica
+
+| Área | Cobertura |
+|--------|-----------|
+| Administração SQL Server | ⭐⭐⭐⭐⭐ |
+| Desenvolvimento T-SQL | ⭐⭐⭐⭐⭐ |
+| Performance Tuning | ⭐⭐⭐⭐⭐ |
+| Monitoramento | ⭐⭐⭐⭐⭐ |
+| Índices | ⭐⭐⭐⭐⭐ |
+| Transaction Log | ⭐⭐⭐⭐⭐ |
+| Backup e Restore | ⭐⭐⭐⭐⭐ |
+| Segurança | ⭐⭐⭐⭐ |
+| Query Store | ⭐⭐⭐⭐ |
+| XML | ⭐⭐⭐⭐ |
+| Service Broker | ⭐⭐⭐ |
+| Spatial Data | ⭐⭐⭐ |
+| Memory Optimized Data | ⭐⭐⭐ |
+
+---
+
+# Áreas com Maior Cobertura
+
+1. Administração SQL Server
+2. Desenvolvimento T-SQL
+3. Performance Tuning
+4. Monitoramento e Diagnóstico
+5. Índices e Estatísticas
+6. Transaction Log
+7. Backup e Restore
+8. Segurança
+9. Query Store
+10. Recuperação de Dados
+
 ---
 
 # Sumário
@@ -14,6 +89,8 @@ Este catálogo tem como objetivo facilitar a navegação pelo acervo de scripts 
 - Recovery
 - Recursos Avançados
 - Compatibilidade por Versão
+- Projetos Especiais
+- Livros e Materiais de Estudo
 
 ---
 
@@ -21,356 +98,4 @@ Este catálogo tem como objetivo facilitar a navegação pelo acervo de scripts 
 
 ## Functions
 
-### Conceitos Básicos
-
-- Criando Funções
-- Criando e Executando Funções
-- Funções Multi Statement
-
-### Exemplos Avançados
-
-- Número por Extenso
-- Tratamento de Strings
-- Funções de Datas
-
----
-
-## CTE
-
-### Conceitos
-
-- Introdução à CTE
-- CTE Recursiva
-- Hierarquias
-
----
-
-## Query Dinâmica
-
-### Exemplos
-
-- Dynamic SQL Simples
-- Dynamic SQL Parametrizado
-- Geração Dinâmica de Consultas
-
----
-
-## Stored Procedures
-
-### Conceitos Básicos
-
-- Criação de Procedures
-- Parâmetros de Entrada
-- Parâmetros de Saída
-
-### Administração
-
-- Procedures de Monitoramento
-- Procedures de Diagnóstico
-
----
-
-# Administração
-
-## Backup e Restore
-
-### Backup
-
-- Backup Completo
-- Backup Diferencial
-- Backup de Transaction Log
-
-### Restore
-
-- Restore Completo
-- Restore Point In Time
-- Verificação de Backups
-
----
-
-## DBCC
-
-### Integridade
-
-- DBCC CHECKDB
-- DBCC CHECKTABLE
-
-### Informações
-
-- DBCC PAGE
-- DBCC IND
-
----
-
-## TempDB
-
-### Monitoramento
-
-- Espaço Utilizado
-- Crescimento de Arquivos
-
-### Diagnóstico
-
-- Contenção
-- Gargalos
-
----
-
-## FileGroups
-
-- Criação
-- Alteração
-- Gerenciamento
-
----
-
-# Performance
-
-## Índices
-
-### Análise
-
-- Fragmentação
-- Índices Não Utilizados
-- Índices Duplicados
-
-### Manutenção
-
-- Rebuild
-- Reorganize
-
----
-
-## Plano de Execução
-
-### Operadores
-
-- Index Seek
-- Index Scan
-- Hash Match
-- Nested Loop
-- Merge Join
-
-### Estudos
-
-- Lookup
-- Sort
-- Spool
-
----
-
-## Query Store
-
-### Monitoramento
-
-- Top Queries
-- Query Regressions
-
-### Diagnóstico
-
-- Planos Diferentes
-- Queries Problemas
-
----
-
-## Wait Statistics
-
-### Categorias
-
-- CPU
-- Memória
-- Disco
-- Rede
-
----
-
-# Monitoramento
-
-## WhoIsActive
-
-### Consultas
-
-- Sessões Ativas
-- Bloqueios
-- Consumo de Recursos
-
----
-
-## Auditoria
-
-### Controle
-
-- Login
-- Alterações
-- Acessos
-
----
-
-## Events
-
-### Monitoramento
-
-- Eventos do Servidor
-- Eventos de Banco
-
----
-
-# Segurança
-
-## Logins And Users
-
-### Administração
-
-- Criação
-- Alteração
-- Remoção
-
----
-
-## Permissões
-
-### Objetos
-
-- SELECT
-- INSERT
-- UPDATE
-- DELETE
-
-### Banco de Dados
-
-- Roles
-- Schemas
-
----
-
-## Criptografia
-
-### Recursos
-
-- Chaves
-- Certificados
-- Dados Criptografados
-
----
-
-# Recovery
-
-## Transaction Log
-
-### Conceitos
-
-- Estrutura do Log
-- VLFs
-
-### Administração
-
-- Crescimento
-- Monitoramento
-
-### Diagnóstico
-
-- Análise de Transações
-- Recuperação
-
----
-
-## Recuperação de Dados
-
-### Casos
-
-- Banco SUSPECT
-- Recuperação de Registros
-- Recuperação de Objetos
-
----
-
-# Recursos Avançados
-
-## Service Broker
-
-- Filas
-- Mensagens
-- Conversações
-
----
-
-## Memory Optimized Tables
-
-- Criação
-- Testes
-- Performance
-
----
-
-## Spatial Data
-
-- Geometria
-- Geografia
-- Consultas Espaciais
-
----
-
-# Compatibilidade por Versão
-
-## SQL Server 2005
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2008
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2012
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2014
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2016
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2017
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2019
-
-- Lista de Scripts Compatíveis
-
-## SQL Server 2022
-
-- Lista de Scripts Compatíveis
-
----
-
-# Legenda de Níveis
-
-🟢 Básico
-
-🟡 Intermediário
-
-🟠 Avançado
-
-🔴 Especialista
-
----
-
-# Estatísticas do Acervo
-
-| Categoria | Quantidade |
-|------------|------------|
-| Desenvolvimento | Em levantamento |
-| Administração | Em levantamento |
-| Performance | Em levantamento |
-| Monitoramento | Em levantamento |
-| Segurança | Em levantamento |
-| Recovery | Em levantamento |
-
----
-
-# Última Atualização
-
-Manter este catálogo atualizado conforme novos scripts forem adicionados ao repositório.
+### 
