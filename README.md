@@ -252,6 +252,11 @@ https://github.com/pedrogalvaojunior
 
 ---
 
+# Catálogo de Scripts SQL Server
+
+📖 [Catálogo Completo de Scripts](CATALOGO.md)
+---
+
 # Observação
 
 Os scripts disponibilizados possuem finalidade educacional, técnica e de apoio profissional.
