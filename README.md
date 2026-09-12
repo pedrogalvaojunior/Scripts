@@ -1,205 +1,55 @@
 # SQL Server Base de conhecimento
 
-Coleção de scripts T-SQL para estudo, desenvolvimento, administração, monitoramento, performance, segurança e troubleshooting no Microsoft SQL Server.
-
-Este repositório reúne conhecimentos, experimentos, estudos de caso, exemplos práticos e soluções utilizadas ao longo de anos de atuação profissional com SQL Server, abrangendo desde conceitos básicos até cenários avançados encontrados em ambientes corporativos.
-
----
+> 📚 Base de conhecimento SQL Server
+>
+> ✅ Centenas de scripts T-SQL
+>
+> ✅ Conteúdo acumulado ao longo de anos de experiência profissional
+>
+> ✅ Compatível com SQL Server 2005 até SQL Server 2022
+>
+> ✅ Administração, Desenvolvimento, Performance, Monitoramento, Segurança e Recovery
+>
+> ✅ Casos reais, estudos, testes e experimentos
 
 ## Sobre o Projeto
 
-Este projeto foi criado com o objetivo de:
+Este repositório reúne uma ampla coleção de scripts T-SQL desenvolvidos, utilizados, estudados e aprimorados ao longo da minha trajetória profissional trabalhando com Microsoft SQL Server.
 
-- Preservar conhecimento técnico acumulado ao longo da carreira;
-- Compartilhar boas práticas relacionadas ao SQL Server;
-- Apoiar estudantes, profissionais e pesquisadores;
-- Servir como laboratório para testes e experimentos;
-- Documentar soluções para problemas reais de administração e desenvolvimento.
+O objetivo principal é preservar conhecimento técnico, compartilhar experiências práticas e disponibilizar exemplos que possam auxiliar estudantes, desenvolvedores, analistas de banco de dados e DBAs em suas atividades diárias.
 
-Atualmente o repositório contempla scripts relacionados a:
-
-- Desenvolvimento T-SQL
-- Administração de Banco de Dados
-- Performance Tuning
-- Monitoramento
-- Segurança
-- Recuperação de Dados
-- Troubleshooting
-- Novos recursos das versões mais recentes do SQL Server
+Além de exemplos básicos voltados ao aprendizado da linguagem T-SQL, o acervo contempla assuntos avançados relacionados à administração, monitoramento, performance, troubleshooting, recuperação de dados e funcionamento interno do SQL Server.
 
 ---
 
-# Índice Navegável
+# Índice
 
-## Desenvolvimento
-
-- #functions
-- #views
-- #stored-procedures
-- #triggers
-- #cte
-- #merge
-- #query-dinamica
-- #xml
-
-## Administração
-
-- #backup-e-restore
-- #tempdb
-- #dbcc
-- #jobs-and-steps
-- #filegroups
-- #servicos
-- #instancia-e-servidor
-
-## Performance
-
-- #indices
-- #plano-de-execucao
-- #query-store
-- #buffer-e-cache
-- #wait-statistics
-- #memoria
-
-## Segurança
-
-- #logins-e-users
-- #application-roles
-- #permissoes
-- #password
-- #criptografia
-
-## Monitoramento
-
-- #whoisactive
-- #auditoria
-- #events
-- #estatisticas
-
-## Recuperação e Troubleshooting
-
-- #transaction-log
-- #entendendo-o-transaction-log
-- #recuperacao-de-dados
-- #trace-flags
-
-## Recursos por Versão
-
-- #sql-server-2005
-- #sql-server-2008
-- #sql-server-2012
-- #sql-server-2014
-- #sql-server-2016
-- #sql-server-2017
-- #sql-server-2019
-- #sql-server-2022
+- #objetivos
+- #tecnologias-e-versões
+- #categorias-disponíveis
+- #destaques-do-repositório
+- #como-utilizar
+- #público-alvo
+- #estrutura-geral
+- #contribuições
+- #autor
 
 ---
 
-# Destaques
+# Objetivos
 
-## Performance
-
-Scripts relacionados a:
-
-- Fragmentação de índices;
-- Rebuild e Reorganize;
-- Query Store;
-- Wait Statistics;
-- Buffer Pool;
-- Plano de Execução;
-- Diagnóstico de lentidão.
+- Compartilhar conhecimento técnico.
+- Preservar scripts desenvolvidos ao longo da carreira.
+- Disponibilizar exemplos de estudo.
+- Apoiar atividades acadêmicas e treinamentos.
+- Documentar soluções utilizadas em ambientes corporativos.
+- Servir como laboratório de testes e pesquisas.
 
 ---
 
-## Administração
+# Tecnologias e Versões
 
-Scripts para:
-
-- Gestão de bancos de dados;
-- Arquivos de dados e logs;
-- TempDB;
-- SQL Agent Jobs;
-- FileGroups;
-- Configurações da instância.
-
----
-
-## Monitoramento
-
-Ferramentas para:
-
-- Análise de sessões;
-- Bloqueios;
-- Auditoria;
-- Estatísticas de utilização;
-- Monitoramento de ambiente.
-
----
-
-## Recovery
-
-Scripts envolvendo:
-
-- Transaction Log;
-- Recuperação de dados;
-- Bancos SUSPECT;
-- Controle e análise de VLFs;
-- Diagnóstico de recuperação.
-
----
-
-# Estrutura das Categorias
-
-## Functions
-
-Funções escalares, table-valued functions e exemplos de utilização.
-
-## Views
-
-Criação e utilização de views para abstração e reaproveitamento de consultas.
-
-## Stored Procedures
-
-Procedimentos armazenados para automação e encapsulamento de regras de negócio.
-
-## Triggers
-
-Exemplos de auditoria, validação e automação através de gatilhos.
-
-## CTE
-
-Expressões de tabela comuns utilizadas para consultas recursivas e organização de código.
-
-## Backup e Restore
-
-Scripts para backup, restore e validação de estratégias de recuperação.
-
-## Índices
-
-Análises de seletividade, fragmentação, manutenção e tuning.
-
-## Query Store
-
-Monitoramento de consultas, regressões de desempenho e troubleshooting.
-
-## Transaction Log
-
-Estudos e exemplos relacionados ao funcionamento interno do log de transações.
-
-## Wait Statistics
-
-Identificação de gargalos e análise de tempo de espera.
-
-## WhoIsActive
-
-Monitoramento de sessões, processos e consultas em execução.
-
----
-
-# Compatibilidade
-
-O acervo contém exemplos compatíveis com:
+O acervo contém exemplos compatíveis com diversas versões do Microsoft SQL Server:
 
 - SQL Server 2005
 - SQL Server 2008
@@ -210,32 +60,184 @@ O acervo contém exemplos compatíveis com:
 - SQL Server 2019
 - SQL Server 2022
 
-Alguns scripts utilizam recursos específicos de determinadas versões.
+Alguns scripts utilizam funcionalidades específicas de determinadas versões.
 
 ---
 
-# Recomendações de Uso
+# Categorias Disponíveis
 
-Antes de executar qualquer script:
+## Desenvolvimento
 
-1. Leia e compreenda seu funcionamento.
-2. Execute inicialmente em ambiente de homologação.
-3. Verifique compatibilidade com sua versão do SQL Server.
-4. Revise permissões necessárias.
-5. Evite utilização direta em produção sem validação prévia.
+- Functions
+- Função
+- Views
+- Stored Procedure
+- Procedimentos
+- Triggers
+- Merge
+- CTE
+- Query Dinâmica
+- XML
+- Split
+- Values
+- Operadores
+- Case
+- Relacionamento
+- Tabela Derivada
+
+## Administração
+
+- Backup e Restore
+- TempDB
+- DBCC
+- FileGroups
+- Jobs And Steps
+- Serviços
+- Instância And Servidor
+- Gerenciamento
+- Dependências
+- SQLCMD
+
+## Performance
+
+- Índices
+- Plano de Execução
+- Query Store
+- Buffer e Cache
+- Memória
+- Wait Statistics
+- Estatísticas
+
+## Segurança
+
+- Logins And Users
+- Application Roles
+- Password
+- Permissões
+- Criptografia
+- Segurança
+
+## Monitoramento
+
+- Auditoria
+- Events
+- WhoIsActive
+- Alerts
+
+## Recuperação e Troubleshooting
+
+- Transaction Log
+- Entendendo o Transaction Log
+- Recuperação de Dados
+- Trace Flags
+
+## Recursos Avançados
+
+- Broker
+- Linked Server
+- Memory Optimized Data
+- Spatial Data
+- Bulk Insert
+- Extended Procedures
+
+---
+
+# Destaques do Repositório
+
+Entre os diversos conteúdos disponíveis, destacam-se:
+
+### Administração de Banco de Dados
+
+- Backup e Restore
+- Gerenciamento de arquivos de dados
+- TempDB
+- FileGroups
+- Configuração de instâncias
+
+### Performance Tuning
+
+- Fragmentação de índices
+- Rebuild e Reorganize
+- Query Store
+- Wait Statistics
+- Planos de Execução
+- Buffer Cache
+
+### Monitoramento
+
+- WhoIsActive
+- Bloqueios
+- Estatísticas
+- Auditoria
+- Monitoramento de processos
+
+### Recovery
+
+- Transaction Log
+- Bancos em estado SUSPECT
+- Recuperação de dados
+- Controle e análise de VLFs
+
+### Desenvolvimento T-SQL
+
+- Funções
+- Procedures
+- Triggers
+- CTEs
+- XML
+- Dynamic SQL
+
+---
+
+# Como Utilizar
+
+Antes da execução de qualquer script:
+
+1. Leia o código atentamente.
+2. Verifique a compatibilidade com sua versão do SQL Server.
+3. Entenda o objetivo do script.
+4. Execute inicialmente em ambiente de homologação.
+5. Evite utilizar diretamente em produção sem validação prévia.
 
 ---
 
 # Público-Alvo
 
-Este material pode ser útil para:
+Este material foi desenvolvido para:
 
-- Estudantes de Banco de Dados;
-- Desenvolvedores T-SQL;
-- Administradores de Banco de Dados (DBAs);
-- Analistas de Dados;
-- Professores e pesquisadores;
-- Profissionais que trabalham com SQL Server.
+- Estudantes de Banco de Dados
+- Desenvolvedores SQL Server
+- Analistas de Sistemas
+- DBAs
+- Professores
+- Pesquisadores
+- Profissionais de tecnologia
+
+---
+
+# Estrutura Geral
+
+```text
+Scripts
+│
+├── Administração
+├── Desenvolvimento
+├── Performance
+├── Monitoramento
+├── Segurança
+├── Recovery
+├── Troubleshooting
+├── Recursos Avançados
+└── Versionamento SQL Server
+```
+
+---
+
+# Contribuições
+
+Sugestões, melhorias e correções são sempre bem-vindas.
+
+Caso encontre alguma melhoria ou deseje compartilhar conhecimento adicional, fique à vontade para abrir uma Issue ou Pull Request.
 
 ---
 
@@ -243,19 +245,15 @@ Este material pode ser útil para:
 
 **Pedro Antonio Galvão Junior**
 
-- Especialista em SQL Server
-- Professor Universitário
-- Pesquisador
-- Desenvolvedor e DBA
+SQL Server Professional | Professor | Pesquisador
+
+GitHub:
+https://github.com/pedrogalvaojunior
 
 ---
 
-# Contribuições
+# Observação
 
-Sugestões de melhoria, correções e novos exemplos são sempre bem-vindos.
+Os scripts disponibilizados possuem finalidade educacional, técnica e de apoio profissional.
 
----
-
-# Licença
-
-Este projeto está disponível para fins de estudo e compartilhamento de conhecimento.
+Sempre valide os exemplos em ambiente de testes antes de sua utilização em produção.
