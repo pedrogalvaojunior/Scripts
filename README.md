@@ -254,7 +254,7 @@ https://github.com/pedrogalvaojunior
 
 # Catálogo de Scripts SQL Server
 
-📖 [Catálogo Completo de Scripts](CATALOGO.md)
+📖 (CATALOGO.md)
 ---
 
 # Observação
