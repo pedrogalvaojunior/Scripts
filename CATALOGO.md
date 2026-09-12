@@ -98,4 +98,377 @@ A base de conhecimento reúne estudos, experimentos, exemplos práticos, projeto
 
 ## Functions
 
-### 
+### Conceitos Básicos
+
+- Criação de Functions
+- Scalar Functions
+- Multi Statement Functions
+- Table-Valued Functions
+
+### Exemplos Intermediários
+
+- Function + Computed Columns
+- Function + Criptografia
+- Function + Outer Apply
+- Function + Datas
+
+### Exemplos Avançados
+
+- Geração de Senhas
+- Funções Não Documentadas
+- LaborDay
+- Manipulação de Strings
+
+---
+
+## Stored Procedures
+
+### Conceitos Básicos
+
+- Criação
+- Parâmetros
+- Tratamento de Erros
+- Versionamento
+
+### Intermediário
+
+- Controle de Concorrência
+- Procedures Administrativas
+- Procedures de Diagnóstico
+
+### Avançado
+
+- Checklists Automatizados
+- Monitoramento
+- Rebuild de Índices
+- Importação de Logs
+
+---
+
+## Triggers
+
+- Triggers DML
+- Triggers DDL
+- Triggers de Logon
+- Triggers entre Bancos
+- Triggers com Bulk Insert
+
+---
+
+## Views
+
+- Views Simples
+- Views Indexadas
+- Views Criptografadas
+- OpenRowset + Views
+
+---
+
+## CTE
+
+- CTE Básica
+- CTE Recursiva
+- Hierarquias
+- Calendários
+- Monitoramento de Processos
+
+---
+
+## Query Dinâmica
+
+- SP_ExecuteSQL
+- Pivot Dinâmico
+- SQL Dinâmico Parametrizado
+- Cross Database Query
+
+---
+
+# Administração
+
+## Backup e Restore
+
+- Backup Full
+- Backup Diferencial
+- Backup de Log
+- Restore Point in Time
+- Database Snapshot
+- Estratégias de Recuperação
+
+---
+
+## DBCC
+
+- CHECKDB
+- CHECKFILEGROUP
+- PAGE
+- LOGINFO
+- OPENTRAN
+
+---
+
+## TempDB
+
+- Monitoramento
+- Contenção
+- Crescimento
+- Troubleshooting
+
+---
+
+## Filegroups
+
+- Criação
+- Migração
+- Partition Function
+- Partition Scheme
+
+---
+
+## Jobs and Steps
+
+- SQL Agent Jobs
+- Schedules
+- Histórico
+- Automação
+
+---
+
+# Performance
+
+## Índices
+
+- Fragmentação
+- Missing Index
+- Fill Factor
+- Índices Clusterizados
+- Índices Não Clusterizados
+- Compressão
+- Cobertura
+
+---
+
+## Estatísticas
+
+- Histogramas
+- Atualização
+- Estatísticas Filtradas
+- Cardinalidade
+
+---
+
+## Plano de Execução
+
+### Lookup
+
+- Key Lookup
+- RID Lookup
+
+### Join Operators
+
+- Nested Loops
+- Merge Join
+- Hash Join
+
+### Scan e Seek
+
+- Table Scan
+- Index Scan
+- Index Seek
+
+### Sort e Spool
+
+- Sort
+- Lazy Spool
+- Eager Spool
+- Row Count Spool
+
+---
+
+## Query Store
+
+- Configuração
+- Limpeza
+- Force Plan
+- Regressão de Performance
+- Top Consultas
+
+---
+
+## Wait Statistics
+
+- CPU Pressure
+- Wait Queues
+- Session Waits
+- Troubleshooting
+
+---
+
+# Monitoramento
+
+## WhoIsActive
+
+- Captura de Sessões
+- Log Histórico
+- Blocking Sessions
+
+## Auditoria
+
+- SQL Audit
+- Default Trace
+- Eventos de Segurança
+
+## Extended Events
+
+- Deadlocks
+- Sort Warnings
+- Blocked Process
+
+---
+
+# Segurança
+
+## Logins e Usuários
+
+- Criação
+- Migração
+- Permissões
+- Proxy Accounts
+
+## Criptografia
+
+- Hash
+- Chaves Simétricas
+- Certificados
+- Proteção de Dados
+
+## Permissões
+
+- Roles
+- Grants
+- Schemas
+- Endpoints
+
+---
+
+# Recovery
+
+## Transaction Log
+
+- LSN
+- VLF
+- fn_dblog
+- Recuperação de Dados
+
+## Recuperação
+
+- Banco SUSPECT
+- Emergency Mode
+- Recuperação de Páginas
+
+---
+
+# Recursos Avançados
+
+## Service Broker
+
+- Filas
+- Contratos
+- Mensagens
+- Processamento Assíncrono
+
+## XML
+
+- XQuery
+- FOR XML
+- XML Indexes
+- XML Data Type
+
+## Spatial Data
+
+- Geography
+- Geometry
+
+## Memory Optimized Data
+
+- In-Memory OLTP
+- Memory Optimized Tables
+
+---
+
+# Compatibilidade por Versão
+
+- SQL Server 2005
+- SQL Server 2008
+- SQL Server 2012
+- SQL Server 2014
+- SQL Server 2016
+- SQL Server 2017
+- SQL Server 2019
+- SQL Server 2022
+
+---
+
+# Projetos Especiais
+
+## Copa do Mundo 2022
+
+Simulador completo da Copa do Mundo FIFA utilizando SQL Server.
+
+## Copa do Mundo Feminina 2023
+
+Simulador completo da Copa do Mundo Feminina FIFA utilizando SQL Server.
+
+## Copa do Mundo 2026
+
+Versão atualizada contemplando o novo formato da competição.
+
+## Tabela de Endereçamento IPv4
+
+Projeto para geração de todos os endereços IPv4 utilizando SQL Server.
+
+## Controle de Perda por Lote
+
+Procedures de análise e acompanhamento de produção.
+
+---
+
+# Livros e Materiais de Estudo
+
+## Transact-SQL Fundamentals
+
+- SQL Server 2008
+- SQL Server 2012
+- SQL Server 2012-2016
+- SQL Server 2014-2022
+
+## Querying Microsoft SQL Server 2012 (70-461)
+
+- Exercícios
+- Soluções
+- Scripts dos capítulos
+
+## SQL para Análise de Dados
+
+- Séries Temporais
+- Cohorts
+- Text Analysis
+- Anomaly Detection
+- Experiment Analysis
+
+---
+
+# Legenda de Níveis
+
+🟢 Básico
+
+🟡 Intermediário
+
+🟠 Avançado
+
+🔴 Especialista
+
+---
+
+# Última Atualização
+
+Manter este catálogo atualizado conforme novas categorias, scripts e estudos forem adicionados ao repositório.
