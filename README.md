@@ -252,7 +252,7 @@ https://github.com/pedrogalvaojunior
 
 ---
 
-# 📖 [Catálogo Completo de Scripts](CATALOGO.md)
+# 📖 [Catálogo de Scripts](CATALOGO.md)
 ---
 
 # Observação
